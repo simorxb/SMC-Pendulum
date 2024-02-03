@@ -18,7 +18,7 @@ res_V = []
 
 # Simulate for each mass value and store results in res_V
 for m in m_V:
-    sim = collimator.run_simulation(model, parameters = {'m': m, 'W':0.5,'lambda_':1, "tau_d":0.1})
+    sim = collimator.run_simulation(model, parameters = {'m': m, 'W':1.3,'lambda_':2.5, "tau_d":0.1})
     res = sim.results.to_pandas()
     res_V.append(res)
 
